@@ -1,0 +1,14 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.6
+    environment:
+      - MYSQL_DATABASE=students
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_USER=admin
+      - MYSQL_PASSWORD=root
+    volumes:
+      - ./data:/docker-entrypoint-initdb.d
+      - ./data:/20180507_tfp_gaps_index.sql
+    ports:
+      - "8111:3306"
