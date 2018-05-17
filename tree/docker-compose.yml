@@ -9,6 +9,6 @@ services:
       - MYSQL_PASSWORD=root
     volumes:
       - ./data:/docker-entrypoint-initdb.d
-      - ./data:/20180507_tfp_gaps_index.sql
+      - ./data:/20180507_tfp_gaps_index(1).sql
     ports:
       - "8111:3306"
