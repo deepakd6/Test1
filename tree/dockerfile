@@ -1,4 +1,4 @@
 FROM mysql:5.5
 MAINTAINER "deepak"
-ADD 20180507_tfp_gaps_index.sql /root/20180507_tfp_gaps_index.sql
+ADD 20180507_tfp_gaps_index(1).sql /root/20180507_tfp_gaps_index(1).sql
 
